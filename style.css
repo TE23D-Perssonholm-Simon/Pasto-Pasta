@@ -1,0 +1,83 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+  }
+  
+  Contact bar at the top
+  .contact-bar {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+  }
+  
+  .contact-bar a {
+      color: #ffd700;
+      text-decoration: none;
+  }
+  
+  
+  .intro-section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .intro-section h1 {
+      font-size: 3em;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      animation: fadeInText 1s forwards 1s;
+  }
+  
+  .intro-section p {
+      font-size: 1.5em;
+      opacity: 0;
+      animation: fadeInText 1s forwards 2s;
+  }
+  
+  @keyframes fadeInBackground {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  @keyframes fadeInText {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  .intro-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/pasta_suround.png') no-repeat center center/cover;
+      opacity: 0;
+      animation: fadeInBackground 1s forwards;
+      z-index: -1;
+  } 
+  
