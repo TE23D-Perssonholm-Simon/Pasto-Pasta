@@ -11,12 +11,15 @@ body {
 }
 
 .contact-bar {
+    box-sizing: border-box;
     height: 10vh;
+    padding-left: 1%; 
+    padding-right: 0%;  
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: white;
+    background-color: whitesmoke;
     color: white;
     text-align: center;
     position: fixed;
@@ -24,20 +27,36 @@ body {
     top: 0;
     z-index: 10;
 }
-.contact-bar>img{
+.contact-bar>a{
+    height: 100%;
+}
+.contact-bar>a>img{
     height: 100%;
     width: auto;
 }
 .contact-bar-button>a {
-    box-sizing: border-box;
     color: #ffd700;
     text-decoration: none;
+    padding: 10%;
 
+}
+
+#contact-bar-button-group{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .contact-bar-button>button {
     height: 10vh;
-    width: 15vh;
+    width: auto;
+    font-size: 100%;
+    background-color: whitesmoke;
+    border-style: none;
+    
+}
+.contact-bar-button>button:hover{
+    color: red;
 }
 
 .intro-section {
@@ -50,6 +69,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    margin: 0px;
 }
 
 .intro-section h1 {
@@ -97,4 +117,10 @@ body {
     opacity: 0;
     animation: fadeInBackground 1s forwards;
     z-index: -1;
+}
+#kontakta{
+    background-color: #474645;
+    padding: 1%;
+    color: white;
+    margin: 0px;
 }
