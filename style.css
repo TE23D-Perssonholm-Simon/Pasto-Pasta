@@ -26,6 +26,9 @@ body {
     width: 100%;
     top: 0;
     z-index: 10;
+    /* border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 5%; */
 }
 .contact-bar>a{
     height: 100%;
@@ -123,4 +126,54 @@ body {
     padding: 1%;
     color: white;
     margin: 0px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3%;
+    background-color: rgba(256, 256, 256, 0.9);
+    
+}
+.text>p{
+    font-size: 900;
+}
+#pasta-ppl{
+    background-image: url(img/freepik-export-20241016135327fyfZ.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pasta-cirkel{
+    background-image: url(img/pasta-med-cirkel.jpeg);
+    background-size: cover;
+    height: 110vh;
+}
+#text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    position: absolute;
+    bottom: 8%;
+    left: 2%;
+    box-sizing: border-box;
+    max-width: 40%;
+}
+.text2>p{
+    font-size: 900;
+}
+
+main{
+    display: flex;
+    margin: 20vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
