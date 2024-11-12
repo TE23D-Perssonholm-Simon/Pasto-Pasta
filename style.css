@@ -193,4 +193,7 @@ main {
     #text2 {
         bottom: -8%;
     }
+    #pasta-cirkel{
+        background-position-x: 60%;
+    }
 }
