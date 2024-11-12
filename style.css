@@ -13,8 +13,8 @@ body {
 .contact-bar {
     box-sizing: border-box;
     height: 10vh;
-    padding-left: 1%; 
-    padding-right: 0%;  
+    padding-left: 1%;
+    padding-right: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,13 +30,16 @@ body {
     border-bottom-color: black;
     border-bottom-width: 5%; */
 }
-.contact-bar>a{
+
+.contact-bar>a {
     height: 100%;
 }
-.contact-bar>a>img{
+
+.contact-bar>a>img {
     height: 100%;
     width: auto;
 }
+
 .contact-bar-button>a {
     color: #ffd700;
     text-decoration: none;
@@ -44,7 +47,7 @@ body {
 
 }
 
-#contact-bar-button-group{
+#contact-bar-button-group {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -56,9 +59,10 @@ body {
     font-size: 100%;
     background-color: white;
     border-style: none;
-    
+
 }
-.contact-bar-button>button:hover{
+
+.contact-bar-button>button:hover {
     color: red;
 }
 
@@ -121,13 +125,15 @@ body {
     animation: fadeInBackground 1s forwards;
     z-index: -1;
 }
-#kontakta{
+
+#kontakta {
     background-color: #474645;
     padding: 1%;
     color: white;
     margin: 0px;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,25 +142,37 @@ body {
     margin-right: 25%;
     padding: 3%;
     background-color: rgba(256, 256, 256, 0.9);
-    
+
 }
-.text>p{
+
+.text>p {
     font-size: 900;
 }
-#pasta-ppl{
-    background-image: url(img/freepik-export-20241016135327fyfZ.jpeg);
+
+#pasta-ppl {
+    background: url(img/freepik-export-20241016135327fyfZ.jpeg) no-repeat center center/cover;
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#pasta-cirkel{
-    background-image: url(img/pasta-med-cirkel.jpeg);
+
+#pasta-cirkel {
+    background: url(img/pasta-med-cirkel.jpeg) no-repeat center center/cover;
     background-size: cover;
     height: 110vh;
 }
-#text2{
+
+main {
+    display: flex;
+    margin: 20vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#text2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,14 +184,13 @@ body {
     box-sizing: border-box;
     max-width: 40%;
 }
-.text2>p{
+
+#text2>p {
     font-size: 900;
 }
 
-main{
-    display: flex;
-    margin: 20vh;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media only screen and (max-width: 767px) {
+    #text2 {
+        bottom: -8%;
+    }
 }
