@@ -192,6 +192,7 @@ main {
 @media only screen and (max-width: 767px) {
     #text2 {
         bottom: -8%;
+        max-width: 60%;
     }
     #pasta-cirkel{
         background-position-x: 40%;
